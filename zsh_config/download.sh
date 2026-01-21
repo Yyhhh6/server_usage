@@ -22,3 +22,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # 注意需要将 ~/.zshrc 文件中修改为 ZSH_THEME='powerlevel10k/powerlevel10k'
 # 配置可新打开一个终端自行配置，或者直接使用 .p10k.zsh 文件。注意此文件应当位于 ~/.p10k.zsh
 ## 注意使用半角~，而非全角～
+
+# 顺便可以在 tmux 中启用鼠标自动滚动
+# 在 ~/.tmux.conf 中添加：
+# 启用鼠标支持（包括滚轮）
+set -g mouse on
+# 然后重载配置：
+tmux source-file ～/.tmux.conf
